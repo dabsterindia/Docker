@@ -341,17 +341,6 @@ docker rmi python:3.11-slim node:18-alpine redis:latest
 
 ---
 
-## 🔗 What's Next?
-
-Now that you understand Docker images, here are recommended next steps:
-
-- **Dockerfile** — Learn to write your own Dockerfile to build custom images
-- **Docker Compose** — Define and run multi-container apps with a single YAML file
-- **Volumes & Networks** — Persist data and connect containers to each other
-- **Docker Hub** — Explore thousands of official and community images at [hub.docker.com](https://hub.docker.com)
-
----
-
 ## 📚 Helpful Resources
 
 | Resource | Link |
