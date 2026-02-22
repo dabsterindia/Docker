@@ -1,4 +1,4 @@
-# 🐳 What is a Docker Image?
+# 🐳 Day 2 - What is a Docker Image?
 
 > A beginner-friendly guide to understanding Docker Images and getting hands-on with containers.
 
@@ -365,3 +365,4 @@ Now that you understand Docker images, here are recommended next steps:
 ---
 
 *Happy containerizing! 🐳*
+
