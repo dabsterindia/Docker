@@ -42,6 +42,7 @@ Practice Exercise: Run an interactive Ubuntu container and explore it:
 ```
 docker run -it ubuntu bash
 ```
+
 # Inside the container:
 ```
 ls
