@@ -1,0 +1,62 @@
+## What is a Docker Image?
+An image is a read-only template containing the application and its dependencies. It's built in layers, making it efficient and reusable.
+
+## Play with Docker - Demo
+- Create DockerHub Account or Signin - https://app.docker.com/accounts
+- Open https://play-with-docker.com
+- Hello Whale Example (https://github.com/ajeetraina/hellowhale)
+- Build Your First Docker Image & Push it to DockerHub
+
+## Essential Docker Commands
+#### Finding Images:
+```
+# Search Docker Hub
+docker search nginx
+
+# Pull an image
+docker pull nginx:latest
+Managing Images:
+# List all images
+docker images
+
+# Remove an image
+docker rmi nginx
+
+# View image details
+docker inspect nginx
+Running Containers from Images:
+# Run nginx web server
+docker run -d -p 8080:80 --name my-nginx nginx
+
+# -d: detached mode (background)
+# -p: port mapping (host:container)
+# --name: give container a name
+Visit http://localhost:8080 in your browser to see nginx running!
+Managing Containers - Troubleshooting commands
+# List running containers
+docker ps
+
+# List all containers (including stopped)
+docker ps -a
+
+# Stop a container
+docker stop my-nginx
+
+# Start a stopped container
+docker start my-nginx
+
+# Remove a container
+docker rm my-nginx
+
+# View container logs
+docker logs my-nginx
+
+# Execute command in running container
+docker exec -it my-nginx bash
+
+_________________________________________________________________
+## Practice Exercise:
+- Pull Python, Node.js, and Redis images
+- Run each in a container
+- List all running containers
+- Stop and remove them
