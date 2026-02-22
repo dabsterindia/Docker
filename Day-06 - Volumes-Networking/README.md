@@ -514,13 +514,13 @@ const dbConfig = {
 app.get('/', async (req, res) => {
   try {
     const connection = await mysql.createConnection(dbConfig);
-    const [rows] = await connection.execute('SELECT NOW() AS current_time');
+    const [rows] = await connection.execute('SELECT NOW() AS current_server_time');
     await connection.end();
     res.send(`
       <h2>🐳 Docker Networking Demo</h2>
       <p>✅ Web app is running!</p>
       <p>✅ Connected to MySQL via hostname: <b>${process.env.DB_HOST}</b></p>
-      <p>🕐 Database server time: <b>${rows[0].current_time}</b></p>
+      <p>🕐 Database server time: <b>${rows[0].current_server_time}</b></p>
     `);
   } catch (err) {
     res.status(500).send(`❌ Database error: ${err.message}`);
