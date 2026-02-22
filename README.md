@@ -3,13 +3,21 @@
 A structured, practical, and production-focused Docker learning path covering:
 
 ✅ Core fundamentals
+
 ✅ Essential Docker commands
+
 ✅ Dockerfiles from scratch
+
 ✅ Multi-stage builds & optimization
+
 ✅ Volumes & networking deep dive
+
 ✅ Docker Compose
+
 ✅ Real-world projects
+
 ✅ Best practices & security
+
 ✅ Cheat sheets & labs
 
 This repository is designed for:
