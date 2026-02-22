@@ -1,0 +1,39 @@
+# .dockerignore
+
+# Dependency directories (reinstalled inside container anyway)
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# Logs and debug files
+*.log
+logs/
+npm-debug.log*
+
+# Version control
+.git/
+.gitignore
+
+# Secrets and environment files
+.env
+.env.*
+*.pem
+*.key
+
+# Documentation and dev tools
+*.md
+docs/
+.DS_Store
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
+
+# Build artifacts
+dist/
+build/
+*.o
+*.a
